@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+      p {
+        color: hwb(252 0% 0%);
+        font-size: 20px;
+        font-weight: 200;
+      }
+
+      legend {
+        color: hwb(252 0% 0%);
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      label {
+        font-size: 18px;
+      }
+
+      input, select, textarea, button {
+        font-size: 16px;
+        margin-top: 5px;
+      }
+
+      fieldset {
+        margin-bottom: 20px;
+      }
+    </style>
+</head>
+<body>
+  <form action="#" method="post">
+
+    
+    <fieldset>
+      <legend>INDIVIDUAL DETAILS</legend>
+
+      <p>
+        <label for="username">Username:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="username" placeholder="Username">
+      </p>
+
+      <p>
+        <label for="salutation">SALUTATION</label><br>
+        <select id="salutation">
+          <option>Choose not to mention</option>
+          <option>Mr.</option>
+          <option>Miss</option>
+          <option>Mrs</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" id="password" placeholder="Password"><br>
+      </p>
+
+      <p>
+        <label>GENDER</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+      </p>
+
+      <p>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="user@gmail.com"><br>
+      </p>
+
+      <p>
+        <label for="phone">Phone:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input 
+          type="tel" 
+          id="phone" 
+          name="phone" 
+          placeholder="Enter 10 digits"
+          pattern="[0-9]{10}" 
+          maxlength="10"
+          title="Please enter exactly 10 digits"
+          required>
+      </p>
+
+      <p>
+        <label for="bday">Birthdate:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" id="bday"><br>
+      </p>
+
+      <p>
+        <label>PAYMENT METHOD</label><br>
+        <input type="radio" name="payment" value="Cash"> <label>Cash</label>
+        <input type="radio" name="payment" value="Cheque"> <label>Cheque</label>
+        <input type="radio" name="payment" value="Mobile Money"> <label>Mobile Money</label>
+        <input type="radio" name="payment" value="Credit"> <label>Credit</label>
+      </p>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>ENCRYPTION DETAILS</legend>
+    </fieldset>
+
+   
+    <fieldset>
+      <legend>INDENTIFICATION TYPE</legend>
+      <select name="passwordOption">
+        <option></option>
+        <option>ID</option>
+        <option>PIN</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>SUBMISSION PART</legend>
+      <button type="reset">Reset</button><br><br>
+      <button type="submit" style="background-color: #007bff; color: white; border: none; padding: 8px 16px; border-radius: 5px;">Submit</button><br><br>
+      <label>COMMENTS:</label>
+      <input type="text" placeholder="This place is cool with fresh air">
+    </fieldset>
+
+  </form>
+</body>
+</html>
